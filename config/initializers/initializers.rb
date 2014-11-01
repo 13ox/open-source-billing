@@ -1,4 +1,5 @@
 # encoding: UTF-8
+SYSTEM_NAME = 'Invoice System'
 COUNTRY_LIST = ['Afghanistan',
                 'Albania',
                 'Algeria',
