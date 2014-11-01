@@ -160,7 +160,8 @@ module ApplicationHelper
   #Get company name
   def get_company_name
     company_id = session['current_company'] || current_user.current_company || current_user.first_company_id
-    Company.find(company_id).company_name
+    company = Company.find(company_id)
+    "#{company.company_name} / #{company.province_or_state}"
   end
 
 end
