@@ -10,6 +10,12 @@ class SubUsersController < ApplicationController
   end
 
   def new
+    @sub_user = User.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @sub_user }
+    end
   end
 
   def create

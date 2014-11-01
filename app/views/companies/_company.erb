@@ -18,8 +18,8 @@
           <td class="align_center"> <%= check_box_tag "company_ids[]", company.id, false, :id => "company_#{company.id}" %></td>
           <td class="align_left"><%= company.company_name %></td>
           <td class="align_left"><%= company.contact_name %></td>
-          <td class="align_left"><%= company.email %></td>
-          <td class="align_left"><%= company.country %></td>
+          <td class="align_left"><%= company.phone_number %></td>
+          <td class="align_left"><%= company.province_or_state %></td>
           <td class="align_center"><%= link_to t('.edit', :default => t("helpers.links.edit")), edit_company_path(company) %> </td>
         </tr>
     <% end %>
